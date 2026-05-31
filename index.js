@@ -14,7 +14,7 @@ const client = new Client({
 
 const db = new Database('./store.db');
 
-db.serialize(() => {
+
   db.run(`CREATE TABLE IF NOT EXISTS products (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     name TEXT, price INTEGER,
